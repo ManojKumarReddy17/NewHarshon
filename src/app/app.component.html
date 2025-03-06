@@ -1,0 +1,92 @@
+<header id="header" class="tra-menu navbar-dark light-hero-header white-scroll">
+    <div class="header-wrapper">
+        <!-- MOBILE HEADER -->
+        <div class="wsmobileheader clearfix">      
+            <span class="smllogo">
+                <a href="">
+                    <img src="../../assets/images/logo-blue.png" alt="mobile-logo">
+                </a>
+            </span>
+            <a id="wsnavtoggle" class="wsanimated-arrow"><span></span></a>    
+        </div>
+
+        <!-- NAVIGATION MENU -->
+        <div class="wsmainfull menu clearfix">
+            <div class="wsmainwp clearfix">
+                <!-- HEADER BLACK LOGO -->
+                <div class="desktoplogo">
+                    <a href="index.html" class="logo-black"><img src="../../assets/images/logo-blue.png" alt="logo"></a>
+                </div>
+
+                <!-- HEADER WHITE LOGO -->
+                <div class="desktoplogo">
+                    <a href="index.html" class="logo-white"><img src="../../assets/images/logo-blog-white.png" alt="logo"></a>
+                </div>
+
+                <!-- MAIN MENU -->
+                <nav class="wsmenu clearfix">
+                    <ul class="wsmenu-list nav-theme">
+                        <!-- SIMPLE NAVIGATION LINK -->
+                        <!-- <li class="nl-simple" aria-haspopup="true">
+                            <a [routerLink]="['/home']" routerLinkActive="active" class="h-link">Home</a>
+							<a [routerLink]="['/home']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="h-link">Home</a>
+
+                        </li> -->
+						<li class="nl-simple" aria-haspopup="true">
+							<a [routerLink]="['/home']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="h-link">Home</a>
+						</li>
+
+                        <!-- DROPDOWN FOR TECHNOLOGIES -->
+                        <li aria-haspopup="true"><a href="#" class="h-link">Technologies <span class="wsarrow"></span></a>
+                            <ul class="sub-menu">
+                                <li><a [routerLink]="['/aws']" routerLinkActive="active">AWS</a></li>
+                                <li><a [routerLink]="['/Azure']" routerLinkActive="active">Azure</a></li>
+                                <li><a [routerLink]="['/python']" routerLinkActive="active">Python</a></li>
+                                <li><a [routerLink]="['/dotnet']" routerLinkActive="active">.Net</a></li>
+                                <li><a [routerLink]="['/angular']" routerLinkActive="active">Angular</a></li>
+                                <li><a [routerLink]="['/mysql']" routerLinkActive="active">MySQL</a></li>
+                                <li><a [routerLink]="['/mssql']" routerLinkActive="active">MS SQL</a></li>
+                                <li><a [routerLink]="['/react']" routerLinkActive="active">React.js</a></li>
+                                <li><a [routerLink]="['/devops']" routerLinkActive="active">DevOps</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- DROPDOWN FOR SERVICES -->
+                        <li aria-haspopup="true"><a href="#" class="h-link">Services <span class="wsarrow"></span></a>
+                            <ul class="sub-menu">
+                                <li><a [routerLink]="['/softwaredevelopment']" routerLinkActive="active">Software Development</a></li>
+                                <li><a [routerLink]="['/distibutor']" routerLinkActive="active">Distributor Management System</a></li>
+                                <li><a [routerLink]="['/jewelery']" routerLinkActive="active">Jewellery Software</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- DROPDOWN FOR COMPANY -->
+                        <li aria-haspopup="true"><a href="#" class="h-link">Company <span class="wsarrow"></span></a>
+                            <ul class="sub-menu">
+                                <li><a [routerLink]="['/about']" routerLinkActive="active">About Us</a></li>
+                                <li><a [routerLink]="['/office']" routerLinkActive="active">Offices</a></li>
+                                <li><a [routerLink]="['/leadership']" routerLinkActive="active">Leadership</a></li>
+                                <li><a [routerLink]="['/career']" routerLinkActive="active">Careers</a></li>
+                                <li><a [routerLink]="['/contact']" routerLinkActive="active">Contact Us</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- REQUEST DEMO BUTTON -->
+                        <li class="nl-simple" aria-haspopup="true">
+                            <a [routerLink]="['/requestdemo']" class="btn r-04 btn--theme hover--theme last-link">Request Demo</a>
+                        </li> 
+                    </ul>
+                </nav>  <!-- END MAIN MENU -->
+            </div>
+        </div>  <!-- END NAVIGATION MENU -->
+    </div> <!-- End header-wrapper -->
+</header>  <!-- END HEADER -->
+
+
+
+<router-outlet></router-outlet>
+
+		
+
+
+		

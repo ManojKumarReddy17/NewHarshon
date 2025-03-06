@@ -1,0 +1,27 @@
+/* Add this to your component's CSS file or global styles.css */
+
+/* Style for the box around the content */
+.content-box {
+    background-color: #f4f7f9;  /* Light background for the box */
+    border: 2px solid #0077b5;  /* LinkedIn blue for border color (can change to fit your theme) */
+    border-radius: 10px;         /* Rounded corners */
+    padding: 20px;               /* Padding inside the box */
+    margin: 20px 0;              /* Margin to space it out from other content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
+  }
+  
+  /* Style for the paragraph inside the box */
+  .s-21 {
+    font-family: 'Arial', sans-serif;  /* Set the font family (can change to any web-safe font or custom font) */
+    font-size: 18px;                  /* Font size (adjust as necessary) */
+    line-height: 1.6;                 /* Line height for better readability */
+    color: #333;                      /* Dark text color */
+    text-align: center;               /* Center the text */
+  }
+  
+  /* You can also add a hover effect if you like */
+  .content-box:hover {
+    border-color: #005f8f;  /* Darker border on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);  /* Slightly larger shadow on hover */
+  }
+  

@@ -1,0 +1,193 @@
+.content-box { padding: 20px; margin: 20px 0; border: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background-color: #f5f5f5; transition: box-shadow 0.3s ease, transform 0.3s ease;}
+.content-box:hover { box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); transform: scale(1.05);}
+//#fff
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+
+  /* Paragraph Styling */
+  .s-20 {
+    font-size: 20px;  /* Size as per the inline style */
+    line-height: 1.6; /* Makes the text more readable */
+    color: #444;      /* Slightly darker color for text */
+    max-width: 100%;  /* Maximum width for better text alignment */
+    margin: 20px auto; /* Adds space around the paragraph */
+    padding: 20px;
+    background-color: #fff; /* White background to make it stand out */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    text-align: justify;  /* Justified text alignment for a clean look */
+  }
+  
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+
+
+}
+
+/* Flexbox layout for the feature and service sections */
+.feature-section, .service-section {
+  display: flex; /* Use Flexbox for side-by-side layout */
+  align-items: center; /* Align items at the center vertically */
+  justify-content: space-between; /* Create space between image and content */
+  margin-bottom: 40px; /* Add some space between sections */
+}
+
+/* Image styling */
+.feature-image img, .service-image img {
+  width: 100%; /* Ensure the image fills the container */
+  height: 400px; /* Set a consistent height for the images */
+  object-fit: cover; /* Ensure the image fills the area without distortion */
+  border-radius: 8px; /* Optional: Rounded corners for the images */
+}
+
+/* Content section styling */
+.feature-content, .service-content {
+  flex: 1; /* Make the content take up equal or available space */
+  padding-left: 20px; /* Add some space on the left of the content */
+}
+
+/* Styling for titles and text content */
+h1.section-title {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+ul.features-list {
+  padding: 0;
+  list-style-type: none;
+}
+
+ul.features-list .feature-item,
+ul.features-list .service-item {
+  font-size: 16px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .feature-section, .service-section {
+      flex-direction: column; /* Stack content and image vertically on smaller screens */
+      text-align: center; /* Center the content on mobile */
+  }
+
+  .feature-image img, .service-image img {
+      width: 100%; /* Ensure the image width takes 100% on small screens */
+      height: auto; /* Maintain aspect ratio */
+       /* Add space below image */
+  }
+
+  .feature-content, .service-content {
+      padding-left: 0; /* Remove left padding on smaller screens */
+  }
+}
+/* Apply Roboto font globally */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333; /* Set a default text color */
+}
+
+/* Section title styling */
+h1.section-title, h2.section-title, h3.section-title {
+  font-family: 'Roboto', sans-serif; /* Roboto font for titles */
+  font-size: 28px; /* Adjust size as needed */
+  color: #333;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Adjust text content */
+p, .feature-item, .service-item {
+  font-family: 'Roboto', sans-serif; /* Apply Roboto to paragraphs and list items */
+  font-size: 16px; /* Adjust font size for better readability */
+  line-height: 1.6;
+  color: #333; /* Dark gray color for text */
+}
+
+
+/* Adjust other elements as needed */
+
+/* Example of larger font size for headings in feature or service content */
+.feature-content h1, .service-content h1 {
+  font-size: 32px; /* Larger font size for headings */
+  font-weight: bold; /* Bold text for emphasis */
+}
+/* Blue-Redium Box for the Section Header (Azure) */
+.section-header-box {
+  background: linear-gradient(to right, #2196F3, black); /* Blue to Redium gradient */
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  margin-bottom: 20px; /* Space below the header */
+  height: 400px;
+}
+
+/* Blue-Redium Box for the Text Introduction */
+/* Style for the container */
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+/* Box Styling for Left and Right */
+.txt-block {
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background for both boxes */
+  border-radius: 8px; /* Rounded corners */
+  border: 1px solid #ddd; /* Light border */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Styling for the List Items inside the box */
+ul.simple-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.simple-list .list-item {
+  margin-bottom: 15px; /* Space between list items */
+}
+
+/* Text styling */
+.about-text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333; /* Dark text color */
+}
+
+/* Hover Effect for the Right Box */
+.right-box:hover {
+  background-color: #e8f7ff; /* Light blue background on hover */
+  border-color: #007bff; /* Blue border on hover */
+  transform: translateY(-5px); /* Slight upward movement on hover */
+  box-shadow: 0 6px 15px rgba(0, 123, 255, 0.2); /* Stronger shadow on hover */
+}
+
+/* Optional: Hover effect for the Left box */
+.left-box:hover {
+  background-color: #e8f7ff; /* Light blue background on hover */
+  border-color: #007bff; /* Blue border on hover */
+  transform: translateY(-5px); /* Slight upward movement on hover */
+  box-shadow: 0 6px 15px rgba(0, 123, 255, 0.2); /* Stronger shadow on hover */
+}
+
+
+/* Adjust the h1 headers inside the box to ensure the color is readable */
+

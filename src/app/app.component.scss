@@ -1,0 +1,11 @@
+.header-wrapper {
+    width: 100%;             /* Make the box take full width of the screen */
+    height: 120px;           /* Set the height of the box (adjust as needed) */
+    background-color: rgb(255, 255, 255); /* Set the background to white */
+    border: 1px solid #ccc;  /* Optional: Add a light gray border */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
+    display: flex;           /* Optional: Use flex to center content horizontally and vertically */
+    align-items: center;     /* Vertically center the content */
+    justify-content: space-between; /* Align content with space between */
+    padding: 0 20px;         /* Optional: Add some horizontal padding */
+  }

@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+
+// Import Bootstrap
+@import 'css/bootstrap.min.css';
+
+// Import Font Icons
+  @import 'css/flaticon.css';
+
+// Import Plugins Stylesheets
+ @import 'css/menu.css';
+ @import 'css/fade-down.css';
+ @import 'css/magnific-popup.css';
+ @import 'css/owl.carousel.min.css';
+ @import 'css/owl.theme.default.min.css';
+ @import 'css/lunar.css';
+
+// Import On Scroll  Animation
+ @import 'css/animate.css';
+
+// Import Template CSS
+ @import  'css/blue-theme.css';
+
+// Import Responsive CSS
+ @import 'css/responsive.css';
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
