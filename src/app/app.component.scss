@@ -1,6 +1,6 @@
 .header-wrapper {
     width: 100%;             /* Make the box take full width of the screen */
-    height: 120px;           /* Set the height of the box (adjust as needed) */
+    height: 80px;           /* Set the height of the box (adjust as needed) */
     background-color: rgb(255, 255, 255); /* Set the background to white */
     border: 1px solid #ccc;  /* Optional: Add a light gray border */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
@@ -23,7 +23,7 @@
 /* Style the menu button */
 .menubutton {
   position: absolute;          /* Position the button absolutely */
-  top: 20px;                   /* Distance from the top edge */
+  top: 30px;                   /* Distance from the top edge */
   right: 10px;                 /* Distance from the right edge */
   background: transparent;
   border: none;
@@ -36,3 +36,11 @@ mat-icon {
   font-size: 32px;             /* Adjust size of the menu icon */
   color: #000;                 /* Icon color */
 }
+
+::ng-deep .mat-menu-panel {
+  transform-origin: bottom center !important;
+  top: auto !important;
+  bottom: 100% !important;
+}
+
+
