@@ -7,7 +7,59 @@
                     <img src="../../assets/images/logo-blue.png" alt="mobile-logo">
                 </a>
             </span>
-            <a id="wsnavtoggle" class="wsanimated-arrow"><span></span></a>    
+            <a mat-button id="wsnavtoggle" class= "menubutton" [matMenuTriggerFor]="menu">
+                <span><mat-icon>menu</mat-icon></span> <!-- Material Menu Icon -->
+            </a> 
+        
+            <!-- Main Navigation Menu -->
+            <mat-menu #menu="matMenu">
+                <!-- Technologies Dropdown -->
+                <button mat-menu-item [routerLink]="['/home']" routerLinkActive="active">Home</button>
+                
+                <mat-divider></mat-divider> <!-- Optional Divider -->
+              
+                <!-- Technologies Dropdown -->
+                <button mat-menu-item [matMenuTriggerFor]="technologiesMenu">Technologies</button>
+                <mat-menu #technologiesMenu="matMenu">
+                  <button mat-menu-item [routerLink]="['/aws']" routerLinkActive="active">AWS</button>
+                  <button mat-menu-item [routerLink]="['/Azure']" routerLinkActive="active">Azure</button>
+                  <button mat-menu-item [routerLink]="['/python']" routerLinkActive="active">Python</button>
+                  <button mat-menu-item [routerLink]="['/dotnet']" routerLinkActive="active">.Net</button>
+                  <button mat-menu-item [routerLink]="['/angular']" routerLinkActive="active">Angular</button>
+                  <button mat-menu-item [routerLink]="['/mysql']" routerLinkActive="active">MySQL</button>
+                  <button mat-menu-item [routerLink]="['/mssql']" routerLinkActive="active">MS SQL</button>
+                  <button mat-menu-item [routerLink]="['/react']" routerLinkActive="active">React.js</button>
+                  <button mat-menu-item [routerLink]="['/devops']" routerLinkActive="active">DevOps</button>
+                </mat-menu>
+              
+                <mat-divider></mat-divider> <!-- Optional Divider -->
+              
+                <!-- Services Dropdown -->
+                <button mat-menu-item [matMenuTriggerFor]="servicesMenu">Services</button>
+                <mat-menu #servicesMenu="matMenu">
+                  <button mat-menu-item [routerLink]="['/softwaredevelopment']" routerLinkActive="active">Software Development</button>
+                  <button mat-menu-item [routerLink]="['/distibutor']" routerLinkActive="active">Distributor Management System</button>
+                  <button mat-menu-item [routerLink]="['/jewelery']" routerLinkActive="active">Jewellery Software</button>
+                </mat-menu>
+              
+                <mat-divider></mat-divider> <!-- Optional Divider -->
+              
+                <!-- Company Dropdown -->
+                <button mat-menu-item [matMenuTriggerFor]="companyMenu">Company</button>
+                <mat-menu #companyMenu="matMenu">
+                  <button mat-menu-item [routerLink]="['/about']" routerLinkActive="active">About Us</button>
+                  <button mat-menu-item [routerLink]="['/office']" routerLinkActive="active">Offices</button>
+                  <button mat-menu-item [routerLink]="['/leadership']" routerLinkActive="active">Leadership</button>
+                  <button mat-menu-item [routerLink]="['/career']" routerLinkActive="active">Careers</button>
+                  <button mat-menu-item [routerLink]="['/contact']" routerLinkActive="active">Contact Us</button>
+                </mat-menu>
+              
+                <mat-divider></mat-divider> <!-- Optional Divider -->
+              
+                <!-- Request Demo Button -->
+                <button mat-menu-item [routerLink]="['/requestdemo']" class="btn r-04 btn--theme hover--theme last-link">Request Demo</button>
+              </mat-menu>
+         
         </div>
 
         <!-- NAVIGATION MENU -->

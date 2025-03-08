@@ -25,7 +25,9 @@ import { DotnetComponent } from './dotnet/dotnet.component';
 import { MysqlComponent } from './mysql/mysql.component';
 import { AngularComponent } from './angular/angular.component';
 import { MssqlComponent } from './mssql/mssql.component';
-
+import { MatButtonModule } from '@angular/material/button';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatDividerModule } from '@angular/material/divider';
 
 
 
@@ -33,7 +35,8 @@ import { MssqlComponent } from './mssql/mssql.component';
   selector: 'app-root',
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
-  imports: [RouterOutlet,PageComponent,MssqlComponent,DotnetComponent,AngularComponent,MysqlComponent,SoftwareDevelopmentComponent,MatIconModule,ContactComponent,HomeComponent,WebinarrecordingComponent,AboutComponent,OfficesComponent,AwsComponent,LeadershipComponent,CareersComponent,RequestdemoComponent,PrivacyComponent,TermsComponent,RouterModule],
+  imports: [RouterOutlet,PageComponent,MssqlComponent,DotnetComponent,AngularComponent,MysqlComponent,SoftwareDevelopmentComponent,MatIconModule,ContactComponent,HomeComponent,WebinarrecordingComponent,AboutComponent,OfficesComponent,AwsComponent,LeadershipComponent,CareersComponent,RequestdemoComponent,PrivacyComponent,TermsComponent,RouterModule, MatButtonModule,
+    MatMenuModule,MatDividerModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 
