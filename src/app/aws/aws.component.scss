@@ -107,7 +107,8 @@ ul.features-list .service-item {
     border-radius: 10px;
     color: white;
     margin-bottom: 20px; /* Space below the header */
-    height: 400px;
+    height: auto;
+    min-height: 400px;
 }
 
 /* Blue-Redium Box for the Text Introduction */
